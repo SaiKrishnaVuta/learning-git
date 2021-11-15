@@ -1,0 +1,46 @@
+GIT
+
+
+
+How Git works:
+		
+WorkingDir/LocalRepo ---- git add . ---> Staging Area ---git commit ---->Commit history
+
+git init
+git init .		: To make your current directory as a working local repository 
+		  	. represents current directory
+			  init initializes the current directory as a local repository
+  (Only for brand new projects)
+git status		: Gives the state of current working directory and staging area
+
+git add
+git add index.html	: Adds the following file to the staging area
+			  Now the file index.html moves from local repo to staging area
+git rm --cached index.html	: This removes the files from staging area back to local repo
+git add . 		: Adds all the files in working local repo to staging area
+git rm -r --cached . 	: Removes all files from staging area to local repo
+git add -A		: Adds all files even they are part of other folders (everything gets added)
+
+
+git commit			: A safe point (save button)
+git commit -m “ur msg”	: Moves your files from staging area to safe point(commit
+  history)
+git log				: Gives you log of all your commits
+git show <hash>		: Gives you the complete data reg that commit
+git diff				: Gives difference btw the old and modified code
+git restore filename		: To discard the changes
+git commit -ammend -m “ur msg” : To change the msg of your last commit
+
+
+git push	: To transfer from local repository to central/remote repository
+git remote add origin git@github.com:SaiKrishnaVuta/learning-git.git:
+				: connects to remote repository
+git remote set-url origin abc@abc
+				: changes your existing remote repo to abc@abc
+git push -u origin main	: Pushes to master/main remote branch
+
+
+
+git pull	: To transfer from central/remote repository to local repository
+
+
