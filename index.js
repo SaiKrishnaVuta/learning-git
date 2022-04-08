@@ -1,4 +1,5 @@
 Console.log("hello world");
-var someVariable = "123";
-
-console.log(someVariable);
+var someVariable = "ABC";
+if(someVariable === "ABC"){
+  console.log(someVariable);
+}
